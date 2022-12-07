@@ -29,6 +29,7 @@ jobs:
           AWS_EC2_METADATA_DISABLED: true
         run: |
           aws s3 cp \
+            --recursive
             --region ap-northeast-2 \
             build s3://fe-30-useusername1-s3 \
             --delete
